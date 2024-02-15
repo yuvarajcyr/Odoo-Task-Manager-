@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_task_management">
+        <t t-call="web.html.container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="external_layout">
+                    <div class="page">
+                        <h1>Hi, How are you</h1>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <record id="task_management_report" model="ir.actions.report">
+
+        <field name="name">Report task</field>
+        <field name="model">manage.task</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">task_management.report_task_management</field>
+        <field name="report_file">task_management.report_task_management</field>
+        <field name="print_report_name">Task Details</field>
+        <field name="binding_model_id" ref="model_manage_task"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

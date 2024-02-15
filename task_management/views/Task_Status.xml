@@ -1,0 +1,62 @@
+<odoo>
+
+    <record id="action_task_status_normal" model="ir.actions.act_window">
+        <field name="name">Normal</field>
+        <field name="res_model">manage.task</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'default_task_status':'task_status'}</field>
+        <field name="domain">[('task_status', '=', 'normal')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create task details
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="task_status_normal_menu"
+              parent="task_sub_menu"
+              name="Normal"
+              action="action_task_status_normal"
+              sequence="1"/>
+
+
+    <record id="action_task_status_in_progress" model="ir.actions.act_window">
+        <field name="name">In Progress</field>
+        <field name="res_model">manage.task</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'default_task_status':'task_status'}</field>
+        <field name="domain">[('task_status', '=', 'in_progress')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create task details
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="task_status_in_progress_menu"
+              parent="task_sub_menu"
+              name="In Progress"
+              action="action_task_status_in_progress"
+              sequence="2"/>
+
+
+    <record id="action_task_status_completed" model="ir.actions.act_window">
+        <field name="name">Completed</field>
+        <field name="res_model">manage.task</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'default_task_status':'task_status'}</field>
+        <field name="domain">[('task_status', '=', 'completed')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create task details
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="task_status_complete_menu"
+              parent="task_sub_menu"
+              name="Completed"
+              action="action_task_status_completed"
+              sequence="3"/>
+
+</odoo>

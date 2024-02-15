@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+task_management.access_manage_task,access_manage_task,task_management.model_manage_task,base.group_user,1,1,1,1
+task_management.access_skillslist_task,access_skillslist_task,task_management.model_skillslist_task,base.group_user,1,1,1,1
+task_management.access_cancel_task,access_cancel_task,task_management.model_cancel_task,base.group_user,1,1,1,1

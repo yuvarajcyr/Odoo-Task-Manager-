@@ -1,0 +1,27 @@
+
+{
+    'name': 'Task Manager',
+    'author': 'yuvaraj',
+    'summary': 'Task Manager',
+    'website': 'www.odoo.com',
+    'category': 'management',
+    'sequence': '-10',
+    'data': [
+        'security/ir.model.access.csv',
+        'data/skillslist.task.csv',
+        'data/manage.task.csv',
+        'data/skillslist.xml',
+        'data/sequence.xml',
+        'data/email_template.xml',
+        # 'wizard/cancel_task.xml',
+        'views/menu.xml',
+        'views/Task_Status.xml',
+        'views/skills.xml',
+        'report/report_task.xml',
+    ],
+    'images': ['static/description/icon.png'],
+    'license': 'LGPL-3',
+    'depends': ['mail'],
+    'application': True,
+    'installable': True,
+}
